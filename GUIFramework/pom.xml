@@ -11,7 +11,7 @@
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>6.6.1</version>
-			
+
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -32,18 +32,26 @@
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-picocontainer</artifactId>
 			<version>6.6.1</version>
-			
+
 		</dependency>
 		<dependency>
 			<groupId>net.masterthought</groupId>
 			<artifactId>cucumber-reporting</artifactId>
 			<version>5.3.0</version>
 		</dependency>
-	<!-- 	<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-spring</artifactId>
-			<version>6.6.1</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>io.cucumber</groupId> <artifactId>cucumber-spring</artifactId> 
+			<version>6.6.1</version> </dependency> -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>4.2.2</version>
+		</dependency>
 
 	</dependencies>
 
@@ -77,7 +85,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>Cucumber Project</projectName>
+							<projectName>GUI Framework Project</projectName>
 							<outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
 							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
 							<checkBuildResult>false</checkBuildResult>
